@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+.block__box {
+  background-color: #191d48;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: repeat(2, 60px) 1fr;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  grid-template-areas:
+    'block__one block__one'
+    'block__three block__two'
+    'block__three block__four'
+    'block__three block__four'
+
+  ;
+}
+
+.block__one {
+
+  grid-area: block__one;
+}
+
+.block__two {
+
+  grid-area: block__two;
+}
+
+.block__three {
+
+  grid-area: block__three;
+}
+
+.block__four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  grid-area: block__four;
+}
+
+.create__cart {
+  width: 250px;
+  display: grid;
+  box-shadow: 5px 5px 15px 5px rgba(183, 180, 180, 0.58);
+  grid-template-columns: 200px 50px;
+  grid-template-rows: 200px 50px;
+  grid-template-areas:
+    'BlockOne BlockTwo'
+    'BlockThree BlockTwo';
+}
+
+.create__BlockOne {
+
+  grid-area: BlockOne;
+}
+
+.create__BlockTwo {
+
+  background: #872259;
+  grid-area: BlockTwo;
+}
+
+.create__BlockThree {
+  background: #2a0c3c;
+  grid-area: BlockThree;
+}
+
+.create__textArea {
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+  text-align: end;
+  padding: 10px;
+  border: none;
+  resize: none;
+  outline: none;
+  background: #2a0c3c;
+}
+
+.create__textArea:focus {
+  outline: none;
+  border: none;
+  resize: none;
+
+}
